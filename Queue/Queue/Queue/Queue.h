@@ -17,8 +17,6 @@ public:
 	int dequeue();
 	int top();
 	bool isEmpty();
-	
-
 };
 
 
