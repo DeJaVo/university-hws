@@ -18,9 +18,15 @@
     <ClInclude Include="Queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\שנה א%27\סמסטר קיץ\OOP\HW\Queue\Queue\Customer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Queue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\שנה א%27\סמסטר קיץ\OOP\HW\Queue\Queue\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
