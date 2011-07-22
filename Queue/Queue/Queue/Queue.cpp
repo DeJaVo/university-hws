@@ -53,7 +53,7 @@ bool Queue::enqueue(int el)
 	return true;
 }
 
-//removes an element from queue
+//removes the first in line element from queue
 int Queue::dequeue()
 {
 	if(isEmpty())
