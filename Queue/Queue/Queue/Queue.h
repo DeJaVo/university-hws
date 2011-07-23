@@ -9,6 +9,7 @@ private:
 	int _size;
 	int _head;
 	int _tail;
+	int _numC;
 	Customer* Q;
 public:
 	Queue(int size=10);
