@@ -14,7 +14,7 @@ private:
 public:
 	Queue(int size=10);
 	~Queue();
-	Queue(const Queue&);
+	Queue(const Queue& src);
 	Queue& operator=(const Queue& orig);
 	bool enqueue(Customer c);
 	Customer dequeue();
