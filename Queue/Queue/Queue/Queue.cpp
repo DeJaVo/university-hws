@@ -5,6 +5,11 @@ using namespace std;
 //constructor which builds an array according to size or default size
 Queue::Queue(int size=10)
 {
+	if(size<=0)//in case size is not possitive
+	{
+		cout<<"Illegal value"<<endl;
+		return;
+	}
 	if((Q=new Customer[size])==0)
 	{
 		_size=0;
@@ -31,7 +36,7 @@ bool Queue::isEmpty()
 	return(_head==_tail);
 }
 
-//adds a new element into the queue
+//adds a new customer into the queue
 bool Queue::enqueue(Customer c)
 {
 	int next_tail=_tail;
@@ -60,7 +65,7 @@ Customer Queue::dequeue()
 	}
 }
 
-//p
+//prints queue
 void Queue::print()
 {
 	int i=0;
