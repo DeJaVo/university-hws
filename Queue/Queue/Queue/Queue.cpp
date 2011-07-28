@@ -1,3 +1,12 @@
+/***************************************************************************
+ *
+ * HW 1
+ *
+ * Author:  Dvir Segal
+ *
+ * Author:  Sheira Ben Haim
+ **************************************************************************/
+
 #include "Queue.h"
 #include <iostream>
 using namespace std;
@@ -24,13 +33,14 @@ Queue::Queue(int size)
 	}
 }
 
+// copy c'tor
 Queue::Queue(const Queue& src)
 {
 	_size=src._size;
 	_head=src._head;
 	_tail=src._tail;
 	_numC=src._numC;
-	if((Q=new Customer[src._size])==0)
+	if((Q=new Customer[src._size])==0)//checks if allocation failed
 	{
 		_size=_head=_tail=_numC=0;
 		cout<<"Memory allocation error."<<endl;
@@ -42,9 +52,11 @@ Queue::Queue(const Queue& src)
 	}
 	return;
 }
+
+// assigment operator
  Queue& Queue::operator=(const Queue& orig)
  {
-	 if(this==&orig)
+	 if(this==&orig)//not the same object
 		 return *this;
 	 else
 	 {
@@ -53,7 +65,7 @@ Queue::Queue(const Queue& src)
 		_tail=orig._tail;
 		_numC=orig._numC;
 		delete[] Q;
-		if((Q=new Customer[orig._size])==0)
+		if((Q=new Customer[orig._size])==0)//checks if allocation failed
 		{
 			_size=_head=_tail=_numC=0;
 			cout<<"Memory allocation error."<<endl;
@@ -72,12 +84,6 @@ Queue::~Queue()
 {
 	if(_size!=0)
 		delete[] Q; 
-}
-
-//checks if the queue is empty
-bool Queue::isEmpty()
-{
-	return(_numC==0);
 }
 
 //adds a new customer into the queue
@@ -112,7 +118,7 @@ Customer Queue::dequeue()
 }
 
 //prints queue
-void Queue::print()
+void Queue::print() const
 {
 	int i,j=0;
 	if(isEmpty())
