@@ -1,6 +1,15 @@
 #ifndef _QUEUE_H_
 #define _QUEUE_H_
 
+/***************************************************************************
+ *
+ * HW 1
+ *
+ * Author:  Dvir Segal
+ *
+ * Author:  Sheira Ben Haim
+ **************************************************************************/
+
 #include "Customer.h"
 
 class Queue
@@ -18,8 +27,8 @@ public:
 	Queue& operator=(const Queue& orig);
 	bool enqueue(Customer c);
 	Customer dequeue();
-	bool isEmpty();
-	void print();
+	bool isEmpty() const {return(_numC==0);} ; //checks if the queue is empty
+	void print() const;
 };
 
 
