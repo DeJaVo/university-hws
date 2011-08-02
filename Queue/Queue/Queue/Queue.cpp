@@ -89,16 +89,6 @@ Queue::~Queue()
 //adds a new customer into the queue
 bool Queue::enqueue(Customer c)
 {
-	//int next_tail=_tail;
-	//if(next_tail==_size)
-	//	_tail=next_tail=0;
-	//else next_tail++;
-	//if(next_tail==_head)//in case queue is full
-	//	return false;
-	//Q[_tail]=c;
-	//_tail=next_tail;
-	//_numC++;
-	//return true;
 	if(_numC==_size)
 		return false;
 	else
