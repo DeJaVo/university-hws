@@ -117,7 +117,7 @@ Customer Queue::dequeue()
 	else
 	{
 		Customer x=Q[_head];
-		if(_head==_size) 
+		if(_head==_size-1) 
 			_head=0;
 		else _head++;
 		_numC--;
