@@ -74,11 +74,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\..\שנה א%27\סמסטר קיץ\OOP\HW\Queue\Queue\Customer.h" />
+    <ClInclude Include="..\..\..\..\..\..\שנה א%27\semester summer\OOP\תרגולים\Queue\Queue\Customer.h" />
     <ClInclude Include="Queue.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\שנה א%27\סמסטר קיץ\OOP\HW\Queue\Queue\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\שנה א%27\semester summer\OOP\תרגולים\Queue\Queue\main.cpp" />
     <ClCompile Include="Queue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
