@@ -14,7 +14,7 @@ using namespace std;
 //constructor which builds an array according to size or default size
 Queue::Queue(int size)
 {
-	if(size<=0)//in case size is not possitive
+	if(size<0)//in case size is not possitive
 	{
 		cout<<"Illegal value"<<endl;
 		return;
